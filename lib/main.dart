@@ -1,18 +1,19 @@
-import 'package:PPG/homePage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:ppg/homePage.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PPG',
+      title: 'ppg',
       theme: ThemeData(
         brightness: Brightness.light,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
